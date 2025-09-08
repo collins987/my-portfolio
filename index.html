@@ -1,90 +1,130 @@
-
-{% load static %}
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Dennis Ivanov</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-</head>
-<body>
-	<br>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-body h-100  border-info" id="profile-wrapper">
-					<img id="profile-pic" src="images/dennisivanov.jpg">
-					<hr>
-					<h4>Hi I'm Vincent! </h4>
-					<p>I love coding, doing research and collaborating</p>
-				</div>
-			</div>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vincent Collins - Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+          </head>
+          <body>
+            <div class="container mt-4">
 
-			<div class="col-md-9">
-				<div class="card card-body h-100  border-info">
-					<h4>My First Job as a Developer</h4>
-					<hr>
-					<p>3 months after writing my first Hello World program on September 8th 2017 (While working in the marketing department) I had convinced my boss to let me take a stab at building a better version of the outdated laboratory management system my company was running on.</p>
+                <!-- About -->
+                    <section class="text-center mb-5">
+                          <img id="profile-pic" src="images/dennisivanov.jpg" alt="Profile Picture">
+                                <h1 class="mt-3">Vincent Collins</h1>
+                                      <p class="lead">Aspiring Business & Data Analyst | Full Stack Developer</p>
+                                          </section>
 
-					<p>Before I knew it we transitioned from the old system and we're on to mine. My newbie self was now in charge of hosting hundreds of thousands of lab samples and supporting thousands of clients.</p>
+                                              <!-- Skills -->
+                                                  <section class="mb-5">
+                                                        <h2>Skills</h2>
+                                                              <hr>
+                                                                    <h5>Languages</h5>
+                                                                          <p>Python, Django, SQL, HTML/CSS, Git, JavaScript, MERN (MongoDB, Express.js, React, Node.js)</p>
+                                                                                <h5>Skills</h5>
+                                                                                      <p>Data Analysis, Troubleshooting, API Integration, Communication, Scripting, Cloud Services</p>
+                                                                                            <h5>Tools</h5>
+                                                                                                  <p>PowerBi, XAMP, GitHub, Jupyter Notebook, VS Code, MS Office, Docker, Firebase</p>
+                                                                                                        <h5>Packages</h5>
+                                                                                                              <p>Pandas, Seaborn, Matplotlib, BeautifulSoup, NumPy, Scikit-learn</p>
+                                                                                                                  </section>
 
-					<p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
+                                                                                                                      <!-- Work Experience -->
+                                                                                                                          <section class="mb-5">
+                                                                                                                                <h2>Work Experience</h2>
+                                                                                                                                      <hr>
 
-					<ul class="social-links">
-						<li><img class="social" src="images/github.png"></li>
-						<li><img class="social" src="images/linkedin.png"></li>
-					  </ul>					  
+                                                                                                                                            <h5>Business Analyst <span class="text-muted">| Kenya Revenue Authority (KRA)</span></h5>
+                                                                                                                                                  <p><em>May 2025 – May 2026 | Nairobi, Kenya</em></p>
+                                                                                                                                                        <ul>
+                                                                                                                                                                <li>Engaged stakeholders across departments to identify business needs, define goals, and translate them into requirements.</li>
+                                                                                                                                                                        <li>Mapped workflows, identified automation opportunities, and improved efficiency.</li>
+                                                                                                                                                                                <li>Acted as liaison between technical teams and business units.</li>
+                                                                                                                                                                                        <li>Reviewed UI/UX prototypes and validated system designs.</li>
+                                                                                                                                                                                                <li>Tracked KPIs using Excel, SQL, and BI dashboards.</li>
+                                                                                                                                                                                                        <li>Created test plans, facilitated UAT, and documented feedback.</li>
+                                                                                                                                                                                                                <li>Conducted training sessions and supported system rollouts.</li>
+                                                                                                                                                                                                                      </ul>
 
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>My Experience as a Developer</h5>
-					<hr>
-					<p>Full stack developer at FOI laboratories.</p>
-					<p>Designed, built and managed a lab management system as a sole developer. System supported thousands of customers with a UI for Lab Admins and a customer dashboard.</p>
-					</div>
-			</div>
+                                                                                                                                                                                                                            <h5>Data Analyst <span class="text-muted">| Garnet Finance</span></h5>
+                                                                                                                                                                                                                                  <p><em>Sep 2024 – Dec 2024 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                                                <li>Optimized workflows, reducing errors by 25% and boosting productivity by 15%.</li>
+                                                                                                                                                                                                                                                        <li>Automated financial analysis using Python and Bash scripts.</li>
+                                                                                                                                                                                                                                                                <li>Identified security vulnerabilities and enhanced compliance.</li>
+                                                                                                                                                                                                                                                                        <li>Worked independently in a remote role with strong communication.</li>
+                                                                                                                                                                                                                                                                              </ul>
 
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>What I Know</h5>
-					<hr>
-					<p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
-					<p>PS: Working on Node JS, Mongo DB and Machine Learning.</p>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>How I Learn</h5>
-					<hr>
-					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+                                                                                                                                                                                                                                                                                    <h5>IT Intern <span class="text-muted">| Nakuru Law Courts</span></h5>
+                                                                                                                                                                                                                                                                                          <p><em>May 2023 – Aug 2023 | Nakuru, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                <ul>
+                                                                                                                                                                                                                                                                                                        <li>Implemented security patches improving system protection by 25%.</li>
+                                                                                                                                                                                                                                                                                                                <li>Monitored performance, resolved issues, and achieved 90% satisfaction.</li>
+                                                                                                                                                                                                                                                                                                                        <li>Assisted with IT assets, accounts, and AV support.</li>
+                                                                                                                                                                                                                                                                                                                              </ul>
+                                                                                                                                                                                                                                                                                                                                  </section>
 
-					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
-				</div>
-			</div>
+                                                                                                                                                                                                                                                                                                                                      <!-- Education -->
+                                                                                                                                                                                                                                                                                                                                          <section class="mb-5">
+                                                                                                                                                                                                                                                                                                                                                <h2>Education & Certifications</h2>
+                                                                                                                                                                                                                                                                                                                                                      <hr>
 
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>My Short Term Goals</h5>
-				<hr>
-				<p>After almost two years of supporting my system at the lab I’m ready to learn something new. I'll collaborating and sharing my experience with others on my blog (SayHelloWorld.co) & youtube channel.</p>
-				<p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
+                                                                                                                                                                                                                                                                                                                                                            <h5>Azure Security Engineer Associate</h5>
+                                                                                                                                                                                                                                                                                                                                                                  <p><em>Cyber Shujaa | Jun 2025 – Aug 2025 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                                                                                                                                                                                <li>Implemented security controls, identity, and access management.</li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li>Focused on Azure security, Microsoft Defender, and Sentinel.</li>
+                                                                                                                                                                                                                                                                                                                                                                                                <li>Hands-on labs with real-world security scenarios.</li>
+                                                                                                                                                                                                                                                                                                                                                                                                      </ul>
 
-				</div>
-			</div>
-		</div>
-		<br>
-	</div>
+                                                                                                                                                                                                                                                                                                                                                                                                            <h5>Microsoft Security, Compliance, and Identity Fundamentals</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                  <p><em>Cyber Shujaa | May 2025 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                <li>Learned SCI concepts, Microsoft Entra ID, zero-trust, and governance.</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                      </ul>
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                            <h5>ALX Back-End ProDev</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p><em>ALX Africa | Jun 2025 – Oct 2025 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>Mastered Python, Django, JavaScript, and SQL for server-side applications.</p>
 
-</body>
-</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              <h5>ALX Professional Foundations</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p><em>ALX Africa | Mar 2025 – Jun 2025 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>Developed leadership and professional workplace skills.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h5>AWS re/Start Cloud Practitioner</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p><em>May 2024 – Aug 2024 | Nairobi, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>Learned AWS fundamentals, DevOps tools, cloud security, and CI/CD pipelines.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <h5>Bachelor of Business Information Technology</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p><em>Kabarak University | Sept 2019 – Dec 2024 | Nakuru, Kenya</em></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>Relevant coursework: Data Communication, Web Programming, Java, Data Mining, OOP, DBMS.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <!-- Projects -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <section class="mb-5">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h2>Projects</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <hr>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h5>Microsoft SC-900 Labs</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>Hands-on labs with Microsoft Entra ID, Defender, Sentinel, and Purview exploring compliance and governance.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h5>Azure Security Engineer (AZ-500) Labs</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>Practical labs covering Azure RBAC, firewalls, SQL protection, Key Vault, and Sentinel integrations.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <h5>Real-Time Chat Application</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>Developed with MERN stack, including secure authentication and access control.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h5>Doctor Consultation Application</h5>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>Appointment booking and consultation system using Firebase with secure real-time data storage.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <!-- Footer -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <footer class="text-center mt-5 mb-3">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>© 2025 Vincent Collins | Portfolio</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
