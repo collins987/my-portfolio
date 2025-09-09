@@ -1,9 +1,11 @@
-/* General Styles */
+/* -------------------
+   General Styles
+------------------- */
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.6;
-	background-color: #f8f9fa;
-	color: #333;
+	background-color:#ffffff ; 
+	color: #212121; /* dark grey text */
 	margin: 0;
 	padding: 0;
   }
@@ -11,83 +13,111 @@ body {
   h1, h2, h3, h4, h5 {
 	font-weight: bold;
 	line-height: 1.2;
+	color: #212121;
   }
   
   a {
 	text-decoration: none;
-	color: inherit;
+	color: lightblue /* accent blue for links */
   }
   
-  /* Light Blue Button */
-  .btn-lightblue {
-	background-color: #5bc0de;
-	color: #fff;
-	border: none;
-	transition: background 0.3s ease;
-  }
-  .btn-lightblue:hover {
-	background-color: #46a8c6;
-  }
-  
-  /* Profile Section */
+  /* -------------------
+	 Profile Section
+  ------------------- */
   #profile {
 	animation: fadeIn 1s ease-in-out;
   }
+  
   #profile-pic {
-	border: 3px solid #5bc0de;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
   }
   
-  /* Intro Section */
-  .intro h1 {
-	font-size: 3rem;
-  }
-  .intro p.lead {
-	font-size: 1.25rem;
+  /* Profile Text Responsiveness */
+  #profile h2 {
+	font-size: 2rem;
   }
   
-  /* About + Skills */
+  #profile h5 {
+	font-size: 1.1rem;
+	color: #6C757D; /* muted grey */
+  }
+  
+  /* -------------------
+	 Intro Section
+  ------------------- */
+  .intro h1 {
+	font-size: 3rem;
+	color: #212121;
+  }
+  
+  .intro p.lead {
+	font-size: 1.25rem;
+	color: #495057; /* medium grey */
+  }
+  
+   /* Custom Light Blue Button */
+.btn-primary {
+	background-color: #5bc0de;   /* light blue */
+	border-color: #5bc0de;
+  }
+  
+  .btn-primary:hover {
+	background-color: #31b0d5;   /* slightly darker on hover */
+	border-color: #269abc;
+  /* -------------------
+	 About + Skills
+  ------------------- */
   #about-skills .card {
+	background: #fff;
 	border-radius: 12px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-	border: 1px solid #000;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+	border: 1px solid #212121; /* black border */
 	transition: transform 0.3s ease;
   }
+  
   #about-skills .card:hover {
 	transform: translateY(-5px);
   }
   
-  /* Work & Education */
-  #experience .card,
+  /* -------------------
+	 Work & Education
+  ------------------- */
+  #experience .card, 
   #education .card {
+	background: #fff;
 	border-radius: 12px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
 	transition: transform 0.3s ease;
-	border: 1px solid #ddd;
+	border: 1px solid #DEE2E6; /* light grey border */
   }
+  
   #experience .card:hover,
   #education .card:hover {
 	transform: translateY(-5px);
   }
   
-  /* Projects Grid */
+  /* -------------------
+	 Projects Grid
+  ------------------- */
   .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr); /* 3-column layout */
 	gap: 20px;
   }
+  
   .project-card {
 	background: #fff;
-	border: 1px solid #ddd;
+	border: 1px solid #DEE2E6; /* light grey border */
 	border-radius: 12px;
 	padding: 15px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	text-align: center;
   }
+  
   .project-card img {
 	max-width: 100%;
 	border-radius: 8px;
@@ -95,6 +125,7 @@ body {
 	height: 180px;
 	object-fit: cover;
   }
+  
   .project-card:hover {
 	transform: translateY(-5px);
 	box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
@@ -149,26 +180,87 @@ body {
 	border-top: 1px solid #ddd;
   }
   
-  /* Fade-in Animation */
+  /* -------------------
+	 Fade-in Animation
+  ------------------- */
   .fade-in {
 	opacity: 0;
 	transform: translateY(30px);
 	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
+  
   .fade-in.visible {
 	opacity: 1;
 	transform: translateY(0);
   }
+
   
-  /* Responsive Design */
+  /* -------------------
+	 RESPONSIVE DESIGN
+  ------------------- */
+  
+  /* Medium screens (tablets) */
   @media (max-width: 992px) {
-	#profile { text-align: center; }
-	#profile .d-flex { flex-direction: column; align-items: center; }
-	.intro h1 { font-size: 2.5rem; }
-	.projects-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 576px) {
-	.intro h1 { font-size: 2rem; }
-	.projects-grid { grid-template-columns: 1fr; }
+	/* Profile */
+	#profile {
+	  text-align: center;
+	}
+	#profile .d-flex {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	#profile h2 {
+	  font-size: 1.8rem;
+	}
+	#profile h5 {
+	  font-size: 1rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2.5rem;
+	}
+	.intro p.lead {
+	  font-size: 1.1rem;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+	}
   }
   
+  /* Small screens (phones) */
+  @media (max-width: 576px) {
+	/* Profile */
+	#profile h2 {
+	  font-size: 1.5rem;
+	}
+	#profile h5 {
+	  font-size: 0.95rem;
+	}
+	#profile p {
+	  font-size: 0.9rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2rem;
+	}
+	.intro p.lead {
+	  font-size: 1rem;
+	}
+  
+	/* About & Skills side by side → stacked */
+	#about-skills .row {
+	  flex-direction: column;
+	}
+	#about-skills .col-md-6 {
+	  margin-bottom: 20px;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: 1fr; /* 1-column layout */
+	}
+  }
