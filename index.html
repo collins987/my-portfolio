@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vincent Collins | Portfolio</title>
-  <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent Collins Portfolio</title>
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- Profile Section -->
   <section id="profile" class="container my-5 d-flex align-items-center">
-    <img src="images/profile.jpg" alt="Profile Picture" id="profile-pic" />
-    <div class="ms-4">
+    <img src="images/profile.jpg" alt="Profile Picture" id="profile-pic" class="me-4">
+    <div>
       <h2>Vincent Collins</h2>
       <h5>Software Developer | Data Analyst</h5>
+      <p>Building solutions that combine creativity, functionality, and performance.</p>
     </div>
   </section>
 
   <!-- Intro Section -->
-  <section class="intro container my-5 text-center">
-    <h1>Hello, I'm Vincent 👋</h1>
-    <p class="lead">I specialize in building efficient, scalable web applications and insightful data-driven solutions.</p>
-    <a href="#about-skills" class="btn btn-primary btn-lg mt-3">Learn More About Me</a>
+  <section class="intro text-center container my-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p class="lead">I create efficient and scalable web applications while leveraging data insights to drive decisions.</p>
+    <a href="#about-skills" class="btn btn-lightblue btn-lg mt-3">Learn More About Me</a>
   </section>
 
-  <!-- About & Skills Section -->
+  <!-- About + Skills -->
   <section id="about-skills" class="container my-5">
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="card p-4">
+        <div class="card p-4 about-me">
           <h2>About Me</h2>
-          <p>
-            I am a passionate Software Developer and Data Analyst with expertise in Python, Django, SQL, MERN stack, and cloud services. 
-            I thrive in solving complex problems, automating workflows, and building impactful digital products.
-          </p>
+          <p>I am a software developer with expertise in Python, Django, JavaScript, and MERN stack. I enjoy creating solutions that solve real-world problems and streamline processes. With experience in automation, API integration, and data analysis, I strive to deliver projects that are both user-friendly and impactful.</p>
         </div>
       </div>
       <div class="col-md-6 mb-4">
-        <div class="card p-4">
+        <div class="card p-4 skills">
           <h2>Skills</h2>
           <ul>
             <li>Python, Django, JavaScript, MERN</li>
-            <li>SQL, Data Analysis, API Integration</li>
-            <li>Power BI, Jupyter, Git/GitHub</li>
-            <li>Cloud Services & Automation</li>
+            <li>SQL, HTML/CSS, Git</li>
+            <li>Data Analysis, Automation, API Integration</li>
+            <li>PowerBI, Jupyter, Cloud Services</li>
           </ul>
         </div>
       </div>
@@ -54,7 +53,7 @@
   <section id="experience" class="container my-5">
     <h2 class="mb-4">Work Experience</h2>
     <div class="card p-4 mb-3">
-      <h4>Automation Developer</h4>
+      <h5>Automation Developer - XYZ Corp</h5>
       <p>Created automation scripts to generate required documents, saving time and resources while streamlining workflows.</p>
     </div>
   </section>
@@ -63,8 +62,8 @@
   <section id="education" class="container my-5">
     <h2 class="mb-4">Education</h2>
     <div class="card p-4 mb-3">
-      <h4>BSc. Computer Science</h4>
-      <p>University of Nairobi – Graduated 2022</p>
+      <h5>Bachelor of Computer Science</h5>
+      <p>University of Nairobi</p>
     </div>
   </section>
 
@@ -73,20 +72,24 @@
     <h2 class="mb-4">Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1" />
-        <h4>Project One</h4>
+        <img src="images/project1.jpg" alt="Project 1">
+        <h5>Project One</h5>
+        <p>Brief description of project one.</p>
       </div>
       <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2" />
-        <h4>Project Two</h4>
+        <img src="images/project2.jpg" alt="Project 2">
+        <h5>Project Two</h5>
+        <p>Brief description of project two.</p>
       </div>
       <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3" />
-        <h4>Project Three</h4>
+        <img src="images/project3.jpg" alt="Project 3">
+        <h5>Project Three</h5>
+        <p>Brief description of project three.</p>
       </div>
       <div class="project-card">
-        <img src="images/project4.jpg" alt="Project 4" />
-        <h4>Project Four</h4>
+        <img src="images/project4.jpg" alt="Project 4">
+        <h5>Project Four</h5>
+        <p>Brief description of project four.</p>
       </div>
     </div>
   </section>
@@ -94,31 +97,27 @@
   <!-- Contact Section -->
   <section id="contact" class="container my-5">
     <h2 class="mb-4 text-center">Let’s Connect</h2>
-    <p class="text-center mb-5">You can reach me through the platforms below:</p>
+    <p class="text-center mb-5">Feel free to reach out through the platforms below:</p>
 
     <div class="row justify-content-center">
-      <!-- GitHub -->
       <div class="col-6 col-md-3 text-center mb-4">
         <a href="https://github.com/collins987/" target="_blank" class="social-card">
           <i class="fab fa-github fa-3x"></i>
           <p class="mt-3">GitHub</p>
         </a>
       </div>
-      <!-- LinkedIn -->
       <div class="col-6 col-md-3 text-center mb-4">
         <a href="https://www.linkedin.com/in/vincentcollins1/" target="_blank" class="social-card">
           <i class="fab fa-linkedin fa-3x"></i>
           <p class="mt-3">LinkedIn</p>
         </a>
       </div>
-      <!-- Email -->
       <div class="col-6 col-md-3 text-center mb-4">
         <a href="mailto:vincentcollins690@gmail.com" class="social-card">
           <i class="fas fa-envelope fa-3x"></i>
           <p class="mt-3">Email</p>
         </a>
       </div>
-      <!-- Phone -->
       <div class="col-6 col-md-3 text-center mb-4">
         <a href="tel:+254758550468" class="social-card">
           <i class="fas fa-phone fa-3x"></i>
@@ -127,18 +126,15 @@
       </div>
     </div>
 
-    <!-- Resume Button -->
     <div class="text-center">
-      <a href="documents/Vincent_Collins_Resume.pdf" 
-         class="btn btn-primary btn-lg btn-resume" 
-         download>
+      <a href="documents/Vincent_Collins_Resume.pdf" class="btn btn-lightblue btn-lg btn-resume" download>
         Download Resume
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="text-center py-3">
     <p>&copy; 2025 Vincent Collins. All rights reserved.</p>
   </footer>
 </body>

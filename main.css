@@ -6,9 +6,6 @@ body {
 	color: #333;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
   }
   
   h1, h2, h3, h4, h5 {
@@ -21,13 +18,21 @@ body {
 	color: inherit;
   }
   
-  /* -------------------
-	 Profile Section
-  ------------------- */
+  /* Light Blue Button */
+  .btn-lightblue {
+	background-color: #5bc0de;
+	color: #fff;
+	border: none;
+	transition: background 0.3s ease;
+  }
+  .btn-lightblue:hover {
+	background-color: #46a8c6;
+  }
+  
+  /* Profile Section */
   #profile {
 	animation: fadeIn 1s ease-in-out;
   }
-  
   #profile-pic {
 	border: 3px solid #5bc0de;
 	border-radius: 50%;
@@ -36,18 +41,15 @@ body {
 	object-fit: cover;
   }
   
-  #profile h2 { font-size: 2rem; }
-  #profile h5 { font-size: 1.1rem; color: #666; }
+  /* Intro Section */
+  .intro h1 {
+	font-size: 3rem;
+  }
+  .intro p.lead {
+	font-size: 1.25rem;
+  }
   
-  /* -------------------
-	 Intro Section
-  ------------------- */
-  .intro h1 { font-size: 3rem; }
-  .intro p.lead { font-size: 1.25rem; }
-  
-  /* -------------------
-	 About + Skills
-  ------------------- */
+  /* About + Skills */
   #about-skills .card {
 	border-radius: 12px;
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
@@ -58,10 +60,8 @@ body {
 	transform: translateY(-5px);
   }
   
-  /* -------------------
-	 Work & Education
-  ------------------- */
-  #experience .card, 
+  /* Work & Education */
+  #experience .card,
   #education .card {
 	border-radius: 12px;
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
@@ -73,9 +73,7 @@ body {
 	transform: translateY(-5px);
   }
   
-  /* -------------------
-	 Projects Grid
-  ------------------- */
+  /* Projects Grid */
   .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -102,9 +100,7 @@ body {
 	box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
   }
   
-  /* -------------------
-	 Contact Section
-  ------------------- */
+  /* Contact Section */
   #contact {
 	background: #f9fbfd;
 	padding: 60px 20px;
@@ -118,7 +114,6 @@ body {
 	margin-top: 30px;
 	margin-bottom: 30px;
   }
-  
   .social-card {
 	display: inline-block;
 	text-decoration: none;
@@ -145,20 +140,16 @@ body {
 	color: #5bc0de;
   }
   
-  /* -------------------
-	 Footer
-  ------------------- */
+  /* Footer */
   footer {
 	background: #5bc0de;
 	color: #fff;
-	text-align: center;
 	padding: 15px 0;
-	margin-top: auto; /* pushes footer to bottom */
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
   }
   
-  /* -------------------
-	 Fade-in Animation
-  ------------------- */
+  /* Fade-in Animation */
   .fade-in {
 	opacity: 0;
 	transform: translateY(30px);
@@ -169,32 +160,15 @@ body {
 	transform: translateY(0);
   }
   
-  /* -------------------
-	 RESPONSIVE DESIGN
-  ------------------- */
+  /* Responsive Design */
   @media (max-width: 992px) {
 	#profile { text-align: center; }
 	#profile .d-flex { flex-direction: column; align-items: center; }
-	#profile h2 { font-size: 1.8rem; }
-	#profile h5 { font-size: 1rem; }
-  
 	.intro h1 { font-size: 2.5rem; }
-	.intro p.lead { font-size: 1.1rem; }
-  
 	.projects-grid { grid-template-columns: repeat(2, 1fr); }
   }
-  
   @media (max-width: 576px) {
-	#profile h2 { font-size: 1.5rem; }
-	#profile h5 { font-size: 0.95rem; }
-	#profile p { font-size: 0.9rem; }
-  
 	.intro h1 { font-size: 2rem; }
-	.intro p.lead { font-size: 1rem; }
-  
-	#about-skills .row { flex-direction: column; }
-	#about-skills .col-md-6 { margin-bottom: 20px; }
-  
 	.projects-grid { grid-template-columns: 1fr; }
   }
   
