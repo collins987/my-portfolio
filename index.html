@@ -3,26 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vincent Collins Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
+  <title>Vincent Collins</title>
 
-<!-- About + Skills -->
-<section class="mb-5">
-      <h2>About Me & Skills</h2>
-      <hr>
-      <div class="about-skills-grid">
-        <!-- About Me -->
-        <div class="about-me">
-          <h4>About Me</h4>
-          <p>
-            I’m Vincent Collins, a Business Analyst and Full Stack Developer with experience in data analysis,
-            cloud services, and backend development. I enjoy building scalable solutions, solving complex problems,
-            and learning cutting-edge technologies. My background spans across business analysis, IT operations,
-            and software engineering — blending technical and analytical skills to create impact.
-          </p>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <br>
+  <div class="container">
+    <div class="row">
+      <!-- Profile Picture & Intro -->
+      <div class="col-md-3">
+        <div class="card card-body h-100 border-info" id="profile-wrapper">
+          <img id="profile-pic" src="images/profile.jpg" alt="Vincent Collins">
+          <hr>
+          <h4>Hi, I'm Vincent!</h4>
+          <p>I’m a Business Analyst and Full Stack Developer passionate about data, cloud services, and scalable solutions.</p>
         </div>
+      </div>
+
+      <body>
+        <!-- Intro Section -->
+        <section class="intro text-center py-5 bg-light">
+          <div class="container">
+            <h1 class="display-4 font-weight-bold">Hi, I'm Vincent Collins 👋</h1>
+            <p class="lead mt-3">
+              Business Analyst & Full Stack Developer passionate about building scalable solutions, 
+              driving data-driven decisions, and securing modern cloud environments.
+            </p>
+            <p>
+              With experience spanning Business Analysis, IT Operations, Data Analytics, and Backend Development, 
+              I bridge the gap between business needs and technical execution.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg mt-3">Learn More About Me</a>
+          </div>
+        </section>
+      
+        <!-- Profile + About Me Section -->
+        <div class="container my-5" id="about">
+          <div class="row">
+            <!-- Profile Card -->
+            <div class="col-md-3">
+              <div class="card card-body h-100 border-info" id="profile-wrapper">
+                <img id="profile-pic" src="images/profile.jpg" alt="Vincent Collins">
+                <hr>
+                <h4>Vincent Collins</h4>
+                <p>Business Analyst & Full Stack Developer</p>
+              </div>
+            </div>
+      
+            <!-- About Me Card -->
+            <div class="col-md-9">
+              <div class="card card-body h-100 border-info">
+                <h4>About Me</h4>
+                <hr>
+                <p>
+                  I’m Vincent Collins, a dynamic Business Analyst and Full Stack Developer with a background in 
+                  IT operations, software engineering, and data analysis. I specialize in analyzing business 
+                  requirements, designing solutions, and implementing systems that optimize workflows and 
+                  support organizational growth.
+                </p>
+                <p>
+                  Over time, I’ve honed my skills in <strong>Python, Django, MERN stack, SQL, and cloud services</strong>. 
+                  My experience spans from supporting IT operations at Nakuru Law Courts, to analyzing data 
+                  at Garnet Finance, and most recently driving digital transformation at the Kenya Revenue Authority (KRA).
+                </p>
+                <p>
+                  Beyond technical expertise, I bring strong communication, problem-solving, and stakeholder 
+                  engagement skills that allow me to align technical teams with business objectives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>      
     
         <!-- Skills -->
         <div class="skills">
