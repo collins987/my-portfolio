@@ -18,7 +18,7 @@ body {
   
   a {
 	text-decoration: none;
-	color: #0D6EFD; /* accent blue for links */
+	color: #90D5FF; /* accent blue for links */
   }
   
   /* -------------------
@@ -29,7 +29,6 @@ body {
   }
   
   #profile-pic {
-	border: 3px solid #0D6EFD; /* light blue border */
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
