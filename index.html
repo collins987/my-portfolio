@@ -1,98 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vincent Collins - Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-  <header class="navbar">
-    <h1>Vincent Collins</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-    </nav>
-  </header>
-
-  <main class="container">
-
-    <!-- About + Skills Grid -->
-    <section id="about-skills" class="grid-2">
-      <!-- About Me -->
-      <div id="about" class="card">
-        <h2>About Me</h2>
-        <img id="profile-pic" src="images/dennisivanov.jpg" alt="Profile Picture">
-        <p>
-          Hi, I'm Vincent Collins, a passionate Business & Data Analyst with a strong background 
-          in backend development and cloud technologies. I enjoy building secure, scalable 
-          applications and extracting insights from data to drive decisions. My goal is to 
-          contribute to impactful projects while growing as a professional.
-        </p>
-      </div>
-
-      <!-- Skills -->
-      <div id="skills" class="card">
-        <h2>Skills</h2>
-        <h5>Languages</h5>
-        <p>Python, Django, SQL, HTML/CSS, Git, JavaScript, MERN (MongoDB, Express.js, React, Node.js)</p>
-        <h5>Skills</h5>
-        <p>Data Analysis, Troubleshooting, API Integration, Communication, Scripting, Cloud Services</p>
-        <h5>Tools</h5>
-        <p>PowerBi, XAMP, GitHub, Jupyter Notebook, VS Code, MS Office, Docker, Firebase</p>
-        <h5>Packages</h5>
-        <p>Pandas, Seaborn, Matplotlib, BeautifulSoup, NumPy, Scikit-learn</p>
+<!-- About + Skills -->
+<section class="mb-5">
+      <h2>About Me & Skills</h2>
+      <hr>
+      <div class="about-skills-grid">
+        <!-- About Me -->
+        <div class="about-me">
+          <h4>About Me</h4>
+          <p>
+            I’m Vincent Collins, a Business Analyst and Full Stack Developer with experience in data analysis,
+            cloud services, and backend development. I enjoy building scalable solutions, solving complex problems,
+            and learning cutting-edge technologies. My background spans across business analysis, IT operations,
+            and software engineering — blending technical and analytical skills to create impact.
+          </p>
+        </div>
+    
+        <!-- Skills -->
+        <div class="skills">
+          <h4>Skills</h4>
+          <h5>Languages</h5>
+          <p>Python, Django, SQL, HTML/CSS, Git, JavaScript, MERN (MongoDB, Express.js, React, Node.js)</p>
+          <h5>Skills</h5>
+          <p>Data Analysis, Troubleshooting, API Integration, Communication, Scripting, Cloud Services</p>
+          <h5>Tools</h5>
+          <p>PowerBi, XAMP, GitHub, Jupyter Notebook, VS Code, MS Office, Docker, Firebase</p>
+          <h5>Packages</h5>
+          <p>Pandas, Seaborn, Matplotlib, BeautifulSoup, NumPy, Scikit-learn</p>
+        </div>
       </div>
     </section>
-
-    <!-- Work Experience -->
-    <section id="experience" class="card">
-      <h2>Work Experience</h2>
-      <!-- repeat structure from before -->
-      <!-- shortened for clarity, but keep all your CV bullet points here -->
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="card">
-      <h2>Education & Certifications</h2>
-      <!-- shortened for clarity, but keep all your CV bullet points here -->
-    </section>
-
-    <!-- Projects Grid -->
-    <section id="projects" class="card">
+    
+    <!-- Projects -->
+    <section class="mb-5">
       <h2>Projects</h2>
+      <hr>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="images/chat-app.png" alt="Chat App">
-          <h5>Real-Time Chat Application</h5>
-          <p>Secure real-time chat built with MERN stack, including authentication and access control.</p>
-        </div>
-        <div class="project-card">
-          <img src="images/doctor-app.png" alt="Doctor App">
-          <h5>Doctor Consultation Application</h5>
-          <p>Firebase-powered booking and consultation system with real-time data handling.</p>
-        </div>
-        <div class="project-card">
-          <img src="images/sc-900.png" alt="SC-900 Labs">
+          <img src="images/sc900-labs.jpg" alt="SC-900 Labs">
           <h5>Microsoft SC-900 Labs</h5>
-          <p>Hands-on labs exploring Microsoft security, compliance, and identity fundamentals.</p>
+          <p>Hands-on labs with Microsoft Entra ID, Defender, Sentinel, and Purview exploring compliance and governance.</p>
         </div>
+    
         <div class="project-card">
-          <img src="images/az-500.png" alt="Azure Security Labs">
-          <h5>Azure Security Engineer Labs</h5>
-          <p>Scenario-based labs implementing Azure RBAC, firewalls, SQL protection, and Sentinel.</p>
+          <img src="images/az500-labs.jpg" alt="AZ-500 Labs">
+          <h5>Azure Security Engineer (AZ-500) Labs</h5>
+          <p>Practical labs covering Azure RBAC, firewalls, SQL protection, Key Vault, and Sentinel integrations.</p>
+        </div>
+    
+        <div class="project-card">
+          <img src="images/chat-app.jpg" alt="Real-Time Chat App">
+          <h5>Real-Time Chat Application</h5>
+          <p>Developed with MERN stack, including secure authentication and access control.</p>
+        </div>
+    
+        <div class="project-card">
+          <img src="images/doctor-app.jpg" alt="Doctor Consultation App">
+          <h5>Doctor Consultation Application</h5>
+          <p>Appointment booking and consultation system using Firebase with secure real-time data storage.</p>
         </div>
       </div>
     </section>
-
-  </main>
-
-  <footer>
-    <p>© 2025 Vincent Collins | Portfolio</p>
-  </footer>
-</body>
-</html>
+    

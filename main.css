@@ -1,116 +1,38 @@
-/* General styling */
-body {
-	margin: 0;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background: #f5f7fa;
-	color: #333;
-	line-height: 1.6;
-  }
-  
-  /* Navbar */
-  .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #17a2b8;
-	color: #fff;
-	padding: 15px 40px;
-  }
-  
-  .navbar h1 {
-	margin: 0;
-	font-size: 1.5rem;
-  }
-  
-  .navbar nav a {
-	color: #fff;
-	margin-left: 20px;
-	text-decoration: none;
-	font-weight: 500;
-  }
-  
-  .navbar nav a:hover {
-	text-decoration: underline;
-  }
-  
-  /* Container */
-  .container {
-	max-width: 1100px;
-	margin: auto;
-	padding: 20px;
-  }
-  
-  /* Section cards */
-  .card {
-	background: #fff;
-	padding: 25px;
-	border-radius: 12px;
-	margin-bottom: 30px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-  
-  /* Grid layouts */
-  .grid-2 {
+/* Grid for About + Skills */
+.about-skills-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 25px;
-	margin-bottom: 30px;
+	gap: 30px;
+	align-items: start;
   }
   
+  .about-me, .skills {
+	background: #fff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Projects Grid */
   .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 25px;
   }
   
-  /* Project cards */
   .project-card {
-	background: #fdfdfd;
-	border: 1px solid #e5e5e5;
-	border-radius: 10px;
+	background: #fff;
 	padding: 15px;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 	text-align: center;
-	transition: transform 0.2s ease-in-out;
   }
   
   .project-card img {
-	max-width: 100%;
-	height: 160px;
+	width: 100%;
+	height: 180px;
 	object-fit: cover;
 	border-radius: 8px;
 	margin-bottom: 12px;
-  }
-  
-  .project-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  }
-  
-  /* Profile */
-  #profile-pic {
-	width: 160px;
-	height: 160px;
-	border-radius: 50%;
-	border: 4px solid #17a2b8;
-	margin-bottom: 15px;
-  }
-  
-  /* Section titles */
-  h2 {
-	color: #17a2b8;
-	margin-bottom: 20px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-  }
-  
-  /* Footer */
-  footer {
-	text-align: center;
-	padding: 20px;
-	background: #17a2b8;
-	color: #fff;
-	margin-top: 40px;
-	border-top: 4px solid #138496;
   }
   
