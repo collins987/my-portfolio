@@ -1,117 +1,94 @@
 /* -------------------
-   Global Styles
+   General Styles
 ------------------- */
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: #f8f9fa;
+	line-height: 1.6;
+	background-color: #FFFFFF; /* white background */
+	color: #212121; /* dark grey text */
 	margin: 0;
 	padding: 0;
-	color: #333;
-	line-height: 1.6;
   }
   
   h1, h2, h3, h4, h5 {
-	font-weight: 600;
+	font-weight: bold;
 	line-height: 1.2;
+	color: #212121;
   }
   
-  h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	text-align: center; /* headings centered */
-  }
-  
-  @media (max-width: 768px) {
-	h2 {
-	  font-size: 1.6rem;
-	}
-  }
-  
-  @media (max-width: 576px) {
-	h2 {
-	  font-size: 1.4rem;
-	}
+  a {
+	text-decoration: none;
+	color: #0D6EFD; /* accent blue for links */
   }
   
   /* -------------------
 	 Profile Section
   ------------------- */
   #profile {
-	text-align: left;
+	animation: fadeIn 1s ease-in-out;
   }
   
   #profile-pic {
-	border: 3px solid #000; /* black border for profile pic */
+	border: 3px solid #0D6EFD; /* light blue border */
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+  }
+  
+  /* Profile Text Responsiveness */
+  #profile h2 {
+	font-size: 2rem;
+  }
+  
+  #profile h5 {
+	font-size: 1.1rem;
+	color: #6C757D; /* muted grey */
   }
   
   /* -------------------
 	 Intro Section
   ------------------- */
-  .intro {
-	background: #f0f2f5;
+  .intro h1 {
+	font-size: 3rem;
+	color: #212121;
+  }
+  
+  .intro p.lead {
+	font-size: 1.25rem;
+	color: #495057; /* medium grey */
   }
   
   /* -------------------
-	 About + Skills Grid
+	 About + Skills
   ------------------- */
   #about-skills .card {
-	border: 2px solid #000; /* black borders */
+	background: #fff;
 	border-radius: 12px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+	border: 1px solid #212121; /* black border */
+	transition: transform 0.3s ease;
   }
   
-  #about-skills .row {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 30px;
-  }
-  
-  @media (max-width: 768px) {
-	#about-skills .row {
-	  grid-template-columns: 1fr;
-	}
+  #about-skills .card:hover {
+	transform: translateY(-5px);
   }
   
   /* -------------------
-	 Experience & Education Cards
+	 Work & Education
   ------------------- */
-  #experience .card,
+  #experience .card, 
   #education .card {
-	border: 2px solid #000; /* black borders */
+	background: #fff;
 	border-radius: 12px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+	transition: transform 0.3s ease;
+	border: 1px solid #DEE2E6; /* light grey border */
   }
   
-  #experience .card-body,
-  #education .card-body {
-	flex-grow: 1;
-  }
-  
-  /* Grid alignment for Experience & Education */
-  #experience,
-  #education {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-  }
-  
-  @media (max-width: 992px) {
-	#experience,
-	#education {
-	  grid-template-columns: repeat(2, 1fr);
-	}
-  }
-  
-  @media (max-width: 576px) {
-	#experience,
-	#education {
-	  grid-template-columns: 1fr;
-	}
+  #experience .card:hover,
+  #education .card:hover {
+	transform: translateY(-5px);
   }
   
   /* -------------------
@@ -119,35 +96,18 @@ body {
   ------------------- */
   .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr); /* 3-column layout */
 	gap: 20px;
-	align-items: stretch; /* equal height rows */
-  }
-  
-  @media (max-width: 992px) {
-	.projects-grid {
-	  grid-template-columns: repeat(2, 1fr);
-	}
-  }
-  
-  @media (max-width: 576px) {
-	.projects-grid {
-	  grid-template-columns: 1fr;
-	}
   }
   
   .project-card {
 	background: #fff;
-	border: 2px solid #000;
+	border: 1px solid #DEE2E6; /* light grey border */
 	border-radius: 12px;
 	padding: 15px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	text-align: center;
-  
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
   }
   
   .project-card img {
@@ -156,27 +116,104 @@ body {
 	margin-bottom: 15px;
 	height: 180px;
 	object-fit: cover;
-	flex-shrink: 0;
   }
   
-  .project-card h5 {
-	margin-top: auto;
-	margin-bottom: 10px;
-	font-size: 1.1rem;
-  }
-  
-  .project-card p {
-	flex-grow: 1;
-	font-size: 0.95rem;
+  .project-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
   }
   
   /* -------------------
 	 Footer
   ------------------- */
   footer {
-	border-top: 1px solid #ddd;
-	padding-top: 15px;
 	font-size: 0.9rem;
-	color: #666;
+	color: #6C757D; /* muted grey */
+	padding: 15px 0;
+	border-top: 1px solid #DEE2E6;
+  }
+  
+  /* -------------------
+	 Fade-in Animation
+  ------------------- */
+  .fade-in {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+  }
+  
+  /* -------------------
+	 RESPONSIVE DESIGN
+  ------------------- */
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 992px) {
+	/* Profile */
+	#profile {
+	  text-align: center;
+	}
+	#profile .d-flex {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	#profile h2 {
+	  font-size: 1.8rem;
+	}
+	#profile h5 {
+	  font-size: 1rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2.5rem;
+	}
+	.intro p.lead {
+	  font-size: 1.1rem;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+	}
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 576px) {
+	/* Profile */
+	#profile h2 {
+	  font-size: 1.5rem;
+	}
+	#profile h5 {
+	  font-size: 0.95rem;
+	}
+	#profile p {
+	  font-size: 0.9rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2rem;
+	}
+	.intro p.lead {
+	  font-size: 1rem;
+	}
+  
+	/* About & Skills side by side → stacked */
+	#about-skills .row {
+	  flex-direction: column;
+	}
+	#about-skills .col-md-6 {
+	  margin-bottom: 20px;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: 1fr; /* 1-column layout */
+	}
   }
   
