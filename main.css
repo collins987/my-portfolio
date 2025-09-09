@@ -18,7 +18,7 @@ body {
   
   a {
 	text-decoration: none;
-	color: #90D5FF; /* accent blue for links */
+	color: lightblue /* accent blue for links */
   }
   
   /* -------------------
