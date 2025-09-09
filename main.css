@@ -1,31 +1,84 @@
-body{
-	background-color:#F8F8F8!important;
-}
-
-#profile-wrapper{
-	text-align: center;
-}
-
-#profile-pic{
-	width:150px;
-	height: 150px;
+/* General body styling */
+body {
+	background-color: #F8F8F8;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #333;
+	line-height: 1.6;
+  }
+  
+  /* Profile */
+  #profile-pic {
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
-	margin-left: auto;
-  	margin-right: auto;
-}
-
-ul{
-	padding: 0;
-    list-style-type: none;
-}
-
-
-.social-links ul, li{
-	list-style-type:none;
+	border: 4px solid #17a2b8; /* bootstrap info color */
+	margin: 20px auto;
+	display: block;
+  }
+  
+  /* Section headings */
+  h2 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: #17a2b8;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+  }
+  
+  /* Sub-headings (job titles, project names, etc.) */
+  h5 {
+	font-weight: 600;
+	margin-top: 20px;
+	color: #444;
+  }
+  
+  /* Cards for sections */
+  section {
+	background: #fff;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	margin-bottom: 30px;
+  }
+  
+  /* Lists inside cards */
+  section ul {
+	padding-left: 20px;
+  }
+  
+  section ul li {
+	margin-bottom: 8px;
+  }
+  
+  /* Skills paragraphs */
+  section p {
+	margin-bottom: 10px;
+  }
+  
+  /* Social icons */
+  .social-links {
+	margin-top: 15px;
+  }
+  
+  .social-links li {
 	display: inline-block;
-}
-
-.social{
-	width:20px;
-	height: 20px;
-}
+	margin: 0 8px;
+  }
+  
+  .social {
+	width: 28px;
+	height: 28px;
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .social:hover {
+	transform: scale(1.2);
+  }
+  
+  /* Footer */
+  footer {
+	font-size: 0.9rem;
+	color: #777;
+  }
+  
