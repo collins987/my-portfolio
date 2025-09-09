@@ -263,3 +263,10 @@ footer {
 .social-link:hover {
   color: #31b0d5; /* darker shade on hover */
 }
+
+  #contact p {
+	font-size: 0.9rem;
+	color: #333;
+	margin-top: 5px;
+  }
+  
