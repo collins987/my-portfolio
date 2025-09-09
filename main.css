@@ -216,3 +216,14 @@ body {
 	}
   }
   
+  /* Custom Light Blue Button */
+.btn-primary {
+	background-color: #5bc0de;   /* light blue */
+	border-color: #5bc0de;
+  }
+  
+  .btn-primary:hover {
+	background-color: #31b0d5;   /* slightly darker on hover */
+	border-color: #269abc;
+  }
+  
