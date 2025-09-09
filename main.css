@@ -4,22 +4,89 @@ body {
 	line-height: 1.6;
 	background-color: #f8f9fa;
 	color: #333;
+	margin: 0;
+	padding: 0;
   }
   
   h1, h2, h3, h4, h5 {
 	font-weight: bold;
+	line-height: 1.2;
   }
   
   a {
 	text-decoration: none;
+	color: inherit;
   }
   
-  /* Profile Section */
+  /* -------------------
+	 Profile Section
+  ------------------- */
   #profile {
 	animation: fadeIn 1s ease-in-out;
   }
   
-  /* Projects Grid */
+  #profile-pic {
+	border: 3px solid #007bff;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+  }
+  
+  /* Profile Text Responsiveness */
+  #profile h2 {
+	font-size: 2rem;
+  }
+  
+  #profile h5 {
+	font-size: 1.1rem;
+	color: #666;
+  }
+  
+  /* -------------------
+	 Intro Section
+  ------------------- */
+  .intro h1 {
+	font-size: 3rem;
+  }
+  
+  .intro p.lead {
+	font-size: 1.25rem;
+  }
+  
+  /* -------------------
+	 About + Skills
+  ------------------- */
+  #about-skills .card {
+	border-radius: 12px;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+	border: 1px solid #000; /* black border */
+	transition: transform 0.3s ease;
+  }
+  
+  #about-skills .card:hover {
+	transform: translateY(-5px);
+  }
+  
+  /* -------------------
+	 Work & Education
+  ------------------- */
+  #experience .card, 
+  #education .card {
+	border-radius: 12px;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+	transition: transform 0.3s ease;
+	border: 1px solid #ddd;
+  }
+  
+  #experience .card:hover,
+  #education .card:hover {
+	transform: translateY(-5px);
+  }
+  
+  /* -------------------
+	 Projects Grid
+  ------------------- */
   .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -40,6 +107,8 @@ body {
 	max-width: 100%;
 	border-radius: 8px;
 	margin-bottom: 15px;
+	height: 180px;
+	object-fit: cover;
   }
   
   .project-card:hover {
@@ -47,50 +116,19 @@ body {
 	box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
   }
   
-  /* Responsive Layouts */
-  @media (max-width: 992px) {
-	.projects-grid {
-	  grid-template-columns: repeat(2, 1fr);
-	}
-  }
-  
-  @media (max-width: 576px) {
-	.projects-grid {
-	  grid-template-columns: 1fr;
-	}
-  }
-  
-  /* About + Skills Section */
-  #about-skills .card {
-	border-radius: 12px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-	transition: transform 0.3s ease;
-  }
-  
-  #about-skills .card:hover {
-	transform: translateY(-5px);
-  }
-  
-  /* Work & Education Cards */
-  #experience .card, 
-  #education .card {
-	border-radius: 12px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-	transition: transform 0.3s ease;
-  }
-  
-  #experience .card:hover,
-  #education .card:hover {
-	transform: translateY(-5px);
-  }
-  
-  /* Footer */
+  /* -------------------
+	 Footer
+  ------------------- */
   footer {
 	font-size: 0.9rem;
 	color: #666;
+	padding: 15px 0;
+	border-top: 1px solid #ddd;
   }
   
-  /* Fade-in Animation */
+  /* -------------------
+	 Fade-in Animation
+  ------------------- */
   .fade-in {
 	opacity: 0;
 	transform: translateY(30px);
@@ -102,8 +140,73 @@ body {
 	transform: translateY(0);
   }
   
-  /* Optional: Make profile picture round */
-  #profile-pic {
-	border: 3px solid #007bff;
+  /* -------------------
+	 RESPONSIVE DESIGN
+  ------------------- */
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 992px) {
+	/* Profile */
+	#profile {
+	  text-align: center;
+	}
+	#profile .d-flex {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	#profile h2 {
+	  font-size: 1.8rem;
+	}
+	#profile h5 {
+	  font-size: 1rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2.5rem;
+	}
+	.intro p.lead {
+	  font-size: 1.1rem;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 576px) {
+	/* Profile */
+	#profile h2 {
+	  font-size: 1.5rem;
+	}
+	#profile h5 {
+	  font-size: 0.95rem;
+	}
+	#profile p {
+	  font-size: 0.9rem;
+	}
+  
+	/* Intro */
+	.intro h1 {
+	  font-size: 2rem;
+	}
+	.intro p.lead {
+	  font-size: 1rem;
+	}
+  
+	/* About & Skills side by side → stacked */
+	#about-skills .row {
+	  flex-direction: column;
+	}
+	#about-skills .col-md-6 {
+	  margin-bottom: 20px;
+	}
+  
+	/* Projects */
+	.projects-grid {
+	  grid-template-columns: 1fr;
+	}
   }
   
